@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="http://localhost:3000">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin thực tập</title>
+    <link rel="stylesheet" href="./ttsv.css" type="text/css">
+    <script>
+    function validateForm() {
+        var txtName = document.getElementById('name').value;
+        var txtSex = document.getElementById('gioitinh').value;
+        var txtBirthDay = document.getElementById('dob').value;
+        var txtEmail = document.getElementById('email').value;
+        var txtmsv = document.getElementById('msv').value;
+        var txtteam = document.getElementById('team').value;
+        if (txtName == '') {
+            alert('Bạn chưa nhập họ tên. ');
+        }
+        else if (txtSex =='') {
+            alert('Bạn chưa nhập giới tính.');
+        }
+        else if (txtBirthDay == '') {
+            alert("Bạn chưa nhập ngày sinh.")
+        }  else if (txtEmail == '') {
+            alert("Bạn chưa nhập Email.")
+        } else if (txtmsv== '') {
+            alert('Bạn chưa nhập mã sinh viên')
+        }
+        else if (txtteam== '') {
+            alert('Bạn chưa nhập nhóm thực tập')
+        }
+        else {
+            return true;
+        }
+        return false;
+    }
+</script>
+   
+</head>
+    
+<body>
+    <div id="logo">
+            <img src="./ifr2.png" id="ifr">
+            <img src="./bat-tay.jpg" id="ok">
+            <img src="./tlu2.png" id="tlu">
+    </div><br><br>  
+    <div id="menu">
+    <a href="/">
+        <b> Trang chủ
+        </a>&nbsp;
+   
+        <a href="/list">
+            Danh sách
+            </a> &nbsp;
+            <a href="/add">
+        Thêm
+        </a>
+        </b>
+    </div>
+    

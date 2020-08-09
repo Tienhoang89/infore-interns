@@ -1,0 +1,21 @@
+<%- include ('block/head') %>
+<div id="bgr">
+<div id="main">
+    <div id="main_left">
+        <h2 class="">
+            Điền thông tin thực tập
+        </h2><br>
+        <form action="/edit" method="POST" id="add" onsubmit="return validateForm()">
+            <input type="hidden"name='tmp'value="<%- nsinhvien._id %>">
+            Họ và tên : <input type="text" value="  <%- nsinhvien.name %>" name="name" id="name"> <br><br>
+            Giới tính: <input type="text" value="  <%- nsinhvien.gioitinh %>" name="gioitinh" id="gioitinh"><br><br>
+            Ngày sinh :  <input type="text" value="  <%- nsinhvien.dob %>" name="dob" id="dob"><br><br>
+            Email : <input type="email" name="email" value="  <%- nsinhvien.email %>" id="email" placeholder="abcxyz@wru.vn"><br><br>
+            Mã sinh viên : <input type="text" value="  <%- nsinhvien.msv %>" name="msv" placeholder="165106xxxx" id="msv"><br><br>
+            Nhóm thực tập : <input name="team" value="  <%- nsinhvien.team %>" type="text" placeholder="Ví dụ:Inlab" id="team"><br><br>
+            <button type="submit ">Sửa </button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

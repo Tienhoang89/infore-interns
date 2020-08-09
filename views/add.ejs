@@ -1,0 +1,20 @@
+<%- include ('block/head') %>
+<div id="bgr">
+<div id="main">
+        <h2 class="">
+            Điền thông tin thực tập
+        </h2><br>
+        <form action="/add" method="POST" id=""onsubmit="return validateForm()">
+            Họ và tên : <input type="text" name="name" id="name"> <br><br>
+            Giới tính: <input type="text" name="gioitinh" id="gioitinh"><br><br>
+            Ngày sinh :  <input type="date" name="dob" id="dob"><br><br>
+            Email : <input type="email" name="email" id="email" placeholder="abcxyz@wru.vn"><br><br>
+            Mã sinh viên : <input type="text" name="msv" id="msv" placeholder="165106xxxx"><br><br>
+            Nhóm thực tập : <input name="team" type="text" id="team" placeholder="Ví dụ:Inlab" ><br><br>
+            <button type="submit ">Thêm </button>
+        </form>
+    </div>
+    <div id="footer"></div>
+</div>
+</body>
+</html>

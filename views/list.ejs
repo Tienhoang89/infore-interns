@@ -1,0 +1,29 @@
+<%- include ('block/head') %>
+<div id="list">
+<h1>List Page</h1>
+<% danhsach.forEach(function(nsinhvien){%>
+    <b>Họ tên:
+    <%- nsinhvien.name %></b>
+    <br>
+    
+    <b>Giới tính:
+        <%- nsinhvien.gioitinh %></b>
+        <br>
+    <b>Ngày sinh:
+    <%- nsinhvien.dob %></b>
+    <br>
+        <b>Mã sinh viên:
+            <%- nsinhvien.msv%></b>
+            <br>
+            <b>Email:
+                <%- nsinhvien.email%></b>
+                <br>
+    <b>Team:
+                <%- nsinhvien.team%></b>
+                <br>
+                <a href="/edit/<%- nsinhvien._id%>">Sửa</a>&ensp;
+                <a onclick="return confirm('Xóa <%- nsinhvien.name %> ?')"href="delete/<%- nsinhvien._id%>">Xóa</a>
+    <hr>
+<%})
+%>
+</div>

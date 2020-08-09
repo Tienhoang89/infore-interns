@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    margin-top: 50px;
+    background-color: pink;
+    width: 90%;
+    height: 80px;
+    display: flex;
+    margin: auto;
+}
+#ifr{
+    width: 45%;
+
+}
+#ok{
+    width: 10%;
+    height: 80px;
+
+}
+#tlu{
+    width: 45%;
+}
+#logoo{
+    height: 160px;
+}
+
+#menu{
+
+    width: 90%;
+    margin:auto;
+    text-align: center;
+    font-size: x-large;
+
+}
+#bgr{
+    width: 90%;
+    background-color: rgb(148, 219, 247);
+    margin: auto;
+}
+#main{
+    font-size: 20px;
+    width: 25%;
+    margin: auto;
+}
+button{
+    margin-left: 150px;
+}
+#home{
+    width: 90%;
+    margin: auto;
+    min-height: 600px;
+    background-image: url(./aaaa.jpg);
+    background-repeat: no-repeat;
+     background-size: cover;    
+}
+#list{
+    width:60% ;
+    margin: auto;
+    font-size: 20px;
+}
